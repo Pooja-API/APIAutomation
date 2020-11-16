@@ -10,5 +10,9 @@ Feature: Lists of Articles and verify the success status
     Given I perform POST articles request
 
   @api
+  Scenario: Perform PUT request and verify the status
+    Given I perform PUT articles request
+
+  @api
   Scenario: Perform DELETE request and verify the status
     Given I perform DELETE articles request

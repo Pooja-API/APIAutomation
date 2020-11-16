@@ -40,15 +40,6 @@ public class APIArticlesListsSteps {
         System.out.println("POST Request is executed successfully");
     }
 
-    @Given("^I perform PUT articles request$")
-    public void iPerformPUTArticlesRequest() {
-        RestAssured.baseURI = "https://5f99522350d84900163b8737.mockapi.io";
-        given().pathParam("id","5").
-                when().delete("/tech-test/articles").
-                then().assertThat().statusCode(404);
-        System.out.println("PUT Request is executed successfully");
-    }
-
     @Given("^I perform DELETE articles request$")
     public void iPerformDELETEArticleRequest() {
         RestAssured.baseURI = "https://5f99522350d84900163b8737.mockapi.io";

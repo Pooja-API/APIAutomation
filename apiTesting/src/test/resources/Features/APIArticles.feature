@@ -1,4 +1,4 @@
-Feature: Perform HTTP requests on Articles and verify the success status
+Feature: Perform HTTP requests on Single Article and verify the status code
 
   @api
   Scenario: Perform GET request and verify the status
